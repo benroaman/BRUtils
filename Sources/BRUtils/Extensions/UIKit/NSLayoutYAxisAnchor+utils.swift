@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension NSLayoutYAxisAnchor {
+public extension NSLayoutYAxisAnchor {
     func constraint(equalTo anchor: NSLayoutAnchor<NSLayoutYAxisAnchor>, priority: UILayoutPriority) -> NSLayoutConstraint {
         let constraint = self.constraint(equalTo: anchor)
         constraint.priority = priority

@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension NSLayoutDimension {
+public extension NSLayoutDimension {
     func constraint(equalTo dimension: NSLayoutDimension, priority: UILayoutPriority) -> NSLayoutConstraint {
         let constraint = self.constraint(equalTo: dimension)
         constraint.priority = priority

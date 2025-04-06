@@ -14,7 +14,7 @@ infix operator ?<= : ComparisonPrecedence
 infix operator ?== : ComparisonPrecedence
 infix operator ?!= : ComparisonPrecedence
 
-extension Comparable {
+public extension Comparable {
     static func ?>(lhs: Self?, rhs: Self) -> Bool {
         guard let lhs = lhs else { return false }
         return lhs > rhs
@@ -46,7 +46,7 @@ extension Comparable {
     }
 }
 
-extension Equatable {
+public extension Equatable {
     static func ?==(lhs: Self?, rhs: Self) -> Bool {
         guard let lhs = lhs else { return false }
         return lhs == rhs

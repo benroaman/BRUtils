@@ -9,7 +9,7 @@ import UIKit
 
 // Taken from https://stackoverflow.com/questions/19593641/can-i-change-multiplier-property-for-nslayoutconstraint
 
-extension NSLayoutConstraint {
+public extension NSLayoutConstraint {
     /**
      Change multiplier constraint
 

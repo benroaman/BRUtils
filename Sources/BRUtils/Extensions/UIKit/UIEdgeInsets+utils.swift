@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIEdgeInsets {
+public extension UIEdgeInsets {
     static var buttonImage: UIEdgeInsets { UIEdgeInsets(top: 0, left: -8, bottom: 0, right: 0) }
     
     static func make(top: CGFloat = 0, left: CGFloat = 0, bottom: CGFloat = 0, right: CGFloat = 0) -> UIEdgeInsets {

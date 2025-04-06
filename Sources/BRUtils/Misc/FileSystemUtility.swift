@@ -8,7 +8,9 @@
 import Foundation
 
 // MARK: Private API - Subdirectory Generators
-struct FileSystemUtility {
+public struct FileSystemUtility { }
+
+public extension FileSystemUtility {
     private static func log(_ items: Any...) {
         #if DEBUG
         print(items)
@@ -51,7 +53,7 @@ struct FileSystemUtility {
 }
 
 // MARK: Private API - Read/Write/Remove
-extension FileSystemUtility {
+public extension FileSystemUtility {
     static func writeObject<T: Encodable>(_ object: T, to url: URL) {
         do {
             let data = try JSONEncoder().encode(object)
@@ -104,7 +106,7 @@ extension FileSystemUtility {
 }
 
 // MARK: Debug Functions - Use to analyze a directory or json returned from a file
-extension FileSystemUtility {
+public extension FileSystemUtility {
     static func logFileStructure() {
         func logDirectory(at url: URL, nesting: Int) {
             func nestingArrows(_ count: Int) -> String {

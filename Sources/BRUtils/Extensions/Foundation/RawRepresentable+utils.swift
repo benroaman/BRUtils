@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension RawRepresentable {
+public extension RawRepresentable {
     init?(_ raw: RawValue?) {
         guard let raw = raw else { return nil }
         self.init(rawValue: raw)

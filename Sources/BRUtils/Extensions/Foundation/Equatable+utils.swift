@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension Equatable {
+public extension Equatable {
     // Returns true if self is equal to any of the arguments
     // turns (flip == flop || flip == flüp || flip == flap || flip == flep)
     // into
@@ -32,7 +32,7 @@ extension Equatable {
     func none(_ args: [Self]) -> Bool { !any(args) }
 }
 
-extension Equatable where Self: Hashable {
+public extension Equatable where Self: Hashable {
     func any(_ args: Set<Self>) -> Bool { args.contains(self) }
     func none(_ args: Set<Self>) -> Bool { !any(args) }
 }

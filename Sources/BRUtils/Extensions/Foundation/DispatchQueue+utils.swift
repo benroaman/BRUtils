@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension DispatchQueue {
+public extension DispatchQueue {
     class func asyncOnMain(_ task: @escaping () -> Void) {
         Thread.isMainThread ? task() : main.async { task() }
     }

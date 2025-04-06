@@ -8,7 +8,7 @@
 import UIKit
 
 // MARK: Comparisons
-extension UIColor {
+public extension UIColor {
     func hasSameRGB(as otherColor: UIColor) -> Bool {
         var thisR: CGFloat = 0
         var thisG: CGFloat = 0
@@ -41,7 +41,7 @@ extension UIColor {
 }
 
 // MARK: Adjustments
-extension UIColor {
+public extension UIColor {
     func darkened(by amount: CGFloat) -> UIColor {
         var red: CGFloat = 0
         var green: CGFloat = 0
@@ -88,7 +88,7 @@ extension UIColor {
 }
 
 // MARK: Hex
-extension UIColor {
+public extension UIColor {
     static func fromHex(_ hex: String?) -> UIColor {
         guard let hex = hex else { return .white }
         var colorString = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
@@ -146,7 +146,7 @@ extension UIColor {
 }
 
 // MARK: Lumosity/Relative Colors
-extension UIColor {
+public extension UIColor {
     // https://stackoverflow.com/questions/3942878/how-to-decide-font-color-in-white-or-black-depending-on-background-color
     // https://www.w3.org/TR/WCAG20/#relativeluminancedef
     // https://en.wikipedia.org/wiki/Luma_(video)#Rec._601_luma_versus_Rec._709_luma_coefficients

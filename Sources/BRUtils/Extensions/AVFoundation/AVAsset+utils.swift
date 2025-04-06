@@ -7,7 +7,7 @@
 
 import AVFoundation
 
-extension AVAsset {
+public extension AVAsset {
     var heightToWidthRatio: CGFloat? {
         if let videoTrack = tracks(withMediaType: AVMediaType.video).first {
             let size = videoTrack.naturalSize.applying(videoTrack.preferredTransform)

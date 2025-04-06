@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension TimeInterval {
+public extension TimeInterval {
     static var secondsInAnHour: Double { 3600 } // 60*60
     static var secondsInADay: Double { 86400 } // 60*60*24
     static var secondsInAWeek: Double { 604800 } // 60*60*24*7

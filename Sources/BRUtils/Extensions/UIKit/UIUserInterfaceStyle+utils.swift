@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIUserInterfaceStyle {
+public extension UIUserInterfaceStyle {
     static var current: UIUserInterfaceStyle { UIScreen.main.traitCollection.userInterfaceStyle }
     var opposite: UIUserInterfaceStyle {
         switch self {
